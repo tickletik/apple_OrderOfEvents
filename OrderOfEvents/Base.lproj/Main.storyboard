@@ -48,7 +48,21 @@
                     <view key="view" contentMode="scaleToFill" id="fkK-dy-puO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3M2-L8-ROh">
+                                <rect key="frame" x="20.5" y="309.5" width="334" height="48"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <state key="normal" title="Go to Last View Controller"/>
+                                <connections>
+                                    <segue destination="9Fj-kU-jLb" kind="show" id="wfN-Li-oqV"/>
+                                </connections>
+                            </button>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="3M2-L8-ROh" firstAttribute="centerY" secondItem="fkK-dy-puO" secondAttribute="centerY" id="06n-lJ-crS"/>
+                            <constraint firstItem="3M2-L8-ROh" firstAttribute="centerX" secondItem="fkK-dy-puO" secondAttribute="centerX" id="vF5-yh-yuQ"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DtI-BK-e0T"/>
                     </view>
                 </viewController>
