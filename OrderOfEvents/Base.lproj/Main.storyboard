@@ -43,14 +43,13 @@
         <!--Middle View Controller-->
         <scene sceneID="Qle-0Y-e9k">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="KgU-rf-3Af" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="08P-YY-72X" customClass="MiddleViewController" customModule="OrderOfEvents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="fkK-dy-puO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3M2-L8-ROh">
-                                <rect key="frame" x="20.5" y="309.5" width="334" height="48"/>
+                                <rect key="frame" x="20.5" y="569" width="334" height="48"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <state key="normal" title="Go to Last View Controller"/>
                                 <connections>
@@ -66,8 +65,8 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
-                            <constraint firstItem="3M2-L8-ROh" firstAttribute="centerY" secondItem="fkK-dy-puO" secondAttribute="centerY" id="06n-lJ-crS"/>
                             <constraint firstItem="Shy-cz-ZZp" firstAttribute="top" secondItem="DtI-BK-e0T" secondAttribute="top" constant="60" id="bGy-Ru-LBZ"/>
+                            <constraint firstItem="DtI-BK-e0T" firstAttribute="bottom" secondItem="3M2-L8-ROh" secondAttribute="bottom" constant="50" id="fYF-Os-Tdd"/>
                             <constraint firstItem="3M2-L8-ROh" firstAttribute="centerX" secondItem="fkK-dy-puO" secondAttribute="centerX" id="vF5-yh-yuQ"/>
                             <constraint firstItem="Shy-cz-ZZp" firstAttribute="centerX" secondItem="fkK-dy-puO" secondAttribute="centerX" id="xah-We-u6a"/>
                         </constraints>
@@ -77,13 +76,13 @@
                         <outlet property="statusLabel" destination="Shy-cz-ZZp" id="ZXk-OC-BvJ"/>
                     </connections>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KgU-rf-3Af" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1015" y="583"/>
         </scene>
         <!--Last View Controller-->
         <scene sceneID="ytx-7C-n5A">
             <objects>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="nzR-FR-xIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
                 <viewController id="9Fj-kU-jLb" customClass="LastViewController" customModule="OrderOfEvents" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NbO-U0-yAi">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
@@ -104,6 +103,7 @@
                         <viewLayoutGuide key="safeArea" id="qG4-C2-Eno"/>
                     </view>
                 </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="nzR-FR-xIf" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1748" y="584"/>
         </scene>
