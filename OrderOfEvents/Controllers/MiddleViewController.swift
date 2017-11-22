@@ -19,11 +19,21 @@ class MiddleViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    override func viewWillAppear(_ animated: Bool) {
+        <#code#>
     }
     
+    override func viewDidAppear(_ animated: Bool) {
+        <#code#>
+    }
+    
+    override func viewWillDisappear(_ animated: Bool) {
+        <#code#>
+    }
+    
+    override func viewDidDisappear(_ animated: Bool) {
+        <#code#>
+    }
 
     /*
     // MARK: - Navigation
