@@ -17,6 +17,8 @@ class MiddleViewController: UIViewController {
         if let existingText = statusLabel.text {
             statusLabel.text = "\(existingText)\nEvent number \(eventNumber) was \(status)"
         }
+        
+        eventNumber += 1
     }
     override func viewDidLoad() {
         super.viewDidLoad()
