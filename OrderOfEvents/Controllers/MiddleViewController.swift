@@ -10,6 +10,9 @@ import UIKit
 
 class MiddleViewController: UIViewController {
 
+    @IBOutlet weak var statusLabel: UILabel!
+    var eventNumber: Int = 1
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 

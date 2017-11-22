@@ -73,6 +73,9 @@
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="DtI-BK-e0T"/>
                     </view>
+                    <connections>
+                        <outlet property="statusLabel" destination="Shy-cz-ZZp" id="ZXk-OC-BvJ"/>
+                    </connections>
                 </viewController>
             </objects>
             <point key="canvasLocation" x="1015" y="583"/>
