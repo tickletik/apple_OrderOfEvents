@@ -13,26 +13,31 @@ class MiddleViewController: UIViewController {
     @IBOutlet weak var statusLabel: UILabel!
     var eventNumber: Int = 1
     
+    func updateLifeCycleStatus(status: String) {
+        if let existingText = statusLabel.text {
+            statusLabel.text = "\(existingText)\nEvent number \(eventNumber) was \(status)"
+        }
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
-
+        updateLifeCycleStatus(status: "viewDidLoad")
         // Do any additional setup after loading the view.
     }
 
     override func viewWillAppear(_ animated: Bool) {
-        <#code#>
+        updateLifeCycleStatus(status: "viewWillAppear")
     }
     
     override func viewDidAppear(_ animated: Bool) {
-        <#code#>
+        updateLifeCycleStatus(status: "viewDidAppear")
     }
     
     override func viewWillDisappear(_ animated: Bool) {
-        <#code#>
+        updateLifeCycleStatus(status: "viewWillDisappear")
     }
     
     override func viewDidDisappear(_ animated: Bool) {
-        <#code#>
+        updateLifeCycleStatus(status: "viewDidDisappear")
     }
 
     /*
